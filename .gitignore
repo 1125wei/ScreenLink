@@ -1,0 +1,26 @@
+# ---- 构建产物 ----
+pc/build/
+pc/build_release/
+pc/build_pure/
+android/build/
+android/app/build/
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/captures/
+
+# ---- 本地工具链与下载缓存（含安装包，不入库） ----
+.tools/
+
+# ---- 分发产物（通过 GitHub Release 发布） ----
+dist/
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/
+
+# ---- 系统 ----
+Thumbs.db
+.DS_Store
+*.log
