@@ -19,12 +19,15 @@ ScreenLink 是一个**局域网手机遥控截图工具**：手机端一键触�
 
 ## 🚀 快速开始
 
-从 **GitHub Releases** 下载最新版本：
+从 **[GitHub Releases](https://github.com/1125wei/ScreenLink/releases)** 下载最新版本：
 
-| 平台 | 安装包 | 说明 |
+| 平台 | 安装包 | 直达链接（v0.2.0） |
 |---|---|---|
-| Windows | `ScreenLink-vX.Y.Z-win64.zip` | 解压即用，运行 `ScreenLink.exe` |
-| Android | `ScreenLink-vX.Y.Z.apk` | Android 8.0+（minSdk 26） |
+| Windows | `ScreenLink-v0.2.0-win64.zip` | [下载](https://github.com/1125wei/ScreenLink/releases/download/v0.2.0/ScreenLink-v0.2.0-win64.zip) |
+| Android | `ScreenLink-v0.2.0.apk` | [下载](https://github.com/1125wei/ScreenLink/releases/download/v0.2.0/ScreenLink-v0.2.0.apk) |
+
+> **找不到下载按钮？** 仓库主页右侧点 **Releases** → 最新版本号 → 展开 **Assets** 折叠区 → 点击文件下载。
+> 想自己从源码构建？见下方 [本地构建](#-本地构建)。
 
 ### 使用步骤
 
