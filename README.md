@@ -67,8 +67,12 @@ ScreenLink 是一个**局域网手机遥控截图工具**：手机端一键触�
 cd pc
 cmake -B build -G Ninja -DCMAKE_PREFIX_PATH=D:/Qt/6.8.3/msvc2022_64 -DCMAKE_BUILD_TYPE=Release
 cmake --build build
-# 部署运行库（含 OpenSSL TLS 后端）：
-# 复制 exe 到发布目录后执行 windeployqt --release，并补上 plugins/tls/qopensslbackend.dll
+# 部署运行库（自包含，目标机无需预装任何运行库）：
+# 1. windeployqt --release 复制 Qt DLL 与插件
+# 2. 补 OpenSSL TLS 后端: plugins/tls/qopensslbackend.dll（windeployqt 不复制）
+# 3. 补 OpenSSL 本体: libssl-3-x64.dll + libcrypto-3-x64.dll（OpenSSL 3.x）
+# 4. 补 VC 运行库: vcruntime140.dll / vcruntime140_1.dll / msvcp140.dll / msvcp140_1.dll
+#    （目标机可能未装 VC++ Redistributable，缺失会报"缺少 OpenSSL"）
 ```
 
 ### 安卓端（Kotlin / AGP 8.5）
